@@ -8,7 +8,7 @@ import VisitorLocation from "./VisitorsLocation"
 import { Link } from "react-router"
 import type { Location } from "./types"
 import { motion } from "motion/react"
-import type { Variants } from "motion/react"
+import { container, item } from "./animation"
 
 type TextLinkProps = {
     href: string
@@ -20,29 +20,8 @@ type HomeProps = {
     error: boolean
 }
 
-// Parent: orchestrates the stagger. Each child begins 0.08s after the previous.
-const container: Variants = {
-    hidden: {},
-    visible: {
-        transition: {
-            staggerChildren: 0.08,
-        },
-    },
-}
 
-// Child: the reveal itself — the Fey recipe (blur + rise + fade), easeOutExpo.
-const item: Variants = {
-    hidden: { opacity: 0, y: 8, filter: "blur(8px)" },
-    visible: {
-        opacity: 1,
-        y: 0,
-        filter: "blur(0px)",
-        transition: {
-            duration: 0.6,
-            ease: [0.16, 1, 0.3, 1],
-        },
-    },
-}
+
 
 function TextLink({ href, children }: TextLinkProps) {
     return (

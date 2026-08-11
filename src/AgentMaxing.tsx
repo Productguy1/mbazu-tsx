@@ -1,4 +1,6 @@
 import { Link } from "react-router"
+import { motion } from "motion/react"
+import { container, item } from "./animation"
 
 export default function AgentMaxing() {
     return (
@@ -19,41 +21,49 @@ export default function AgentMaxing() {
                     Index
                 </Link>
             </nav>
-            <main className="flex flex-col max-w-2xl m-auto pt-24 pb-14 px-6">
+            <motion.main 
+                variants={container}
+                initial="hidden"
+                animate="visible"
+                className="flex flex-col max-w-2xl m-auto pt-24 pb-14 px-6"
+            >
                 {/* Article header */}
-                <header className="mb-9">
+                <motion.header 
+                    variants={item}
+                    className="mb-9"
+                >
                     <h1 className="text-[18px] font-[450] leading-[1.3] mb-2">
                         Agent maxing: those who will survive the AI era are natural doers
                     </h1>
                     <p className="text-sm text-[#858585]">12th April 2026</p>
-                </header>
+                </motion.header>
 
                 {/* Article body */}
                 <article className="w-full">
-                    <p className="text-sm mb-6 leading-[1.65] font-[410]">
+                    <motion.p variants={item} className="text-sm mb-6 leading-[1.65] font-[410]">
                         There's a quiet sorting happening right now, and most people
                         haven't noticed it yet. They're too busy asking ChatGPT to write
                         LinkedIn posts about how AI is changing everything.
-                    </p>
+                    </motion.p>
 
-                    <p className="text-sm mb-6 leading-[1.65] font-[410]">
+                    <motion.p variants={item} className="text-sm mb-6 leading-[1.65] font-[410]">
                         For two years, the conversation about AI has been stuck in the
                         wrong frame. Will it take my job? Will it replace developers,
                         writers, lawyers, designers? These are the wrong questions
                         because they assume the dividing line runs between professions. It
                         doesn't. It runs straight through them.
-                    </p>
+                    </motion.p>
 
-                    <p className="text-sm mb-6 leading-[1.65] font-[410]">
+                    <motion.p variants={item} className="text-sm mb-6 leading-[1.65] font-[410]">
                         The line is between people who do things and people who wait to be
                         told what to do.
-                    </p>
+                    </motion.p>
 
-                    <h2 className="text-[17px] font-[450] mt-10 mb-4 tracking-[-0.2px]">
+                    <motion.h2 variants={item} className="text-[17px] font-[450] mt-10 mb-4 tracking-[-0.2px]">
                         The end of the permission economy
-                    </h2>
+                    </motion.h2>
 
-                    <p className="text-sm mb-6 leading-[1.65] font-[410]">
+                    <motion.p variants={item} className="text-sm mb-6 leading-[1.65] font-[410]">
                         For most of the last century, work has rewarded a specific
                         archetype: the person who executes well within a system someone
                         else built. You wait for the assignment, you complete the
@@ -62,17 +72,17 @@ export default function AgentMaxing() {
                         approval. The structure protected mediocre execution and punished
                         people who moved too fast. It was a great deal if you liked
                         meetings.
-                    </p>
+                    </motion.p>
 
-                    <p className="text-sm mb-6 leading-[1.65] font-[410]">
+                    <motion.p variants={item} className="text-sm mb-6 leading-[1.65] font-[410]">
                         That world is dissolving. When one person with a laptop, a Claude
                         subscription, and a few hours can produce what used to take a team
                         a quarter, the bottleneck stops being capability and becomes
                         initiative. The constraint shifts from <em>can you do it</em> to{" "}
                         <em>will you actually go do it without anyone asking</em>.
-                    </p>
+                    </motion.p>
 
-                    <p className="text-sm mb-6 leading-[1.65] font-[410]">
+                    <motion.p variants={item} className="text-sm mb-6 leading-[1.65] font-[410]">
                         Most people, it turns out, can't. Not won't, exactly, but actually{" "}
                         <em>can't</em>. They've spent their entire careers being handed
                         problems pre-defined, scoped, and approved. Take away the
@@ -80,20 +90,20 @@ export default function AgentMaxing() {
                         should I work on?", stare at the cursor for a while, and close the
                         tab to go check Slack instead. Slack is comforting. Slack has
                         notifications, which feel like assignments.
-                    </p>
+                    </motion.p>
 
-                    <p className="text-sm mb-6 leading-[1.65] font-[410]">
+                    <motion.p variants={item} className="text-sm mb-6 leading-[1.65] font-[410]">
                         This is what I mean by agent maxing. Not maxing out AI agents, but
                         maxing out the agentic part of yourself. The part that picks up a
                         problem nobody assigned you and starts working on it before anyone
                         has decided whether you're allowed to.
-                    </p>
+                    </motion.p>
 
-                    <h2 className="text-[17px] font-[450] mt-10 mb-4 tracking-[-0.2px]">
+                    <motion.h2 variants={item} className="text-[17px] font-[450] mt-10 mb-4 tracking-[-0.2px]">
                         What natural doers actually do differently
-                    </h2>
+                    </motion.h2>
 
-                    <blockquote className="border-l-2 border-[#e0e0e0] pl-4 my-6">
+                    <motion.blockquote variants={item} className="border-l-2 border-[#e0e0e0] pl-4 my-6">
                         <p className="text-sm mb-2 leading-[1.65] text-[#404040] italic font-[410]">
                             "The doers are the major thinkers. The people that really
                             create the things that change this industry are both the
@@ -102,16 +112,16 @@ export default function AgentMaxing() {
                         <cite className="text-sm text-[#858585] not-italic font-[410]">
                             — Steve Jobs
                         </cite>
-                    </blockquote>
+                    </motion.blockquote>
 
-                    <p className="text-sm mb-6 leading-[1.65] font-[410]">
+                    <motion.p variants={item} className="text-sm mb-6 leading-[1.65] font-[410]">
                         Watch someone who thrives with these tools and you'll notice it
                         isn't really about prompting skill. The prompts are usually
                         mediocre. Sometimes they're embarrassing. What's different is
                         upstream of the prompt entirely.
-                    </p>
+                    </motion.p>
 
-                    <p className="text-sm mb-6 leading-[1.65] font-[410]">
+                    <motion.p variants={item} className="text-sm mb-6 leading-[1.65] font-[410]">
                         Natural doers convert vague unease into concrete artifacts. They
                         notice something annoying about their workflow on Tuesday and by
                         Wednesday they've built a rough script that mostly fixes it. The
@@ -121,18 +131,18 @@ export default function AgentMaxing() {
                         is still drafting a Slack message asking whether anyone else has
                         noticed the problem, then deleting it because it sounds too
                         negative, then rewriting it with three emojis to soften the tone.
-                    </p>
+                    </motion.p>
 
-                    <p className="text-sm mb-6 leading-[1.65] font-[410]">
+                    <motion.p variants={item} className="text-sm mb-6 leading-[1.65] font-[410]">
                         Natural doers treat AI as a collaborator they manage rather than an
                         oracle they consult. They give it half-formed ideas and iterate.
                         They don't wait until they know exactly what they want before
                         starting. They start <em>to find out</em> what they want. The
                         output of the first attempt is the input to the second attempt, and
                         the gap between attempt one and attempt ten is hours, not months.
-                    </p>
+                    </motion.p>
 
-                    <p className="text-sm mb-6 leading-[1.65] font-[410]">
+                    <motion.p variants={item} className="text-sm mb-6 leading-[1.65] font-[410]">
                         Natural doers have a high tolerance for working on things nobody
                         validated yet. This is the deepest difference, and also the one
                         nobody wants to admit. Most professional training conditions you to
@@ -144,13 +154,13 @@ export default function AgentMaxing() {
                         need permission to start, the cost reduction doesn't help you.
                         You're still gated upstream of the tools, sitting in a room waiting
                         for someone to say go.
-                    </p>
+                    </motion.p>
 
-                    <h2 className="text-[17px] font-[450] mt-10 mb-4 tracking-[-0.2px]">
+                    <motion.h2 variants={item} className="text-[17px] font-[450] mt-10 mb-4 tracking-[-0.2px]">
                         The compounding gap
-                    </h2>
+                    </motion.h2>
 
-                    <p className="text-sm mb-6 leading-[1.65] font-[410]">
+                    <motion.p variants={item} className="text-sm mb-6 leading-[1.65] font-[410]">
                         Here's what makes this moment unusual. In previous technology
                         shifts, the gap between the early movers and everyone else closed
                         eventually. Email was once exotic; now your grandmother sends them,
@@ -158,9 +168,9 @@ export default function AgentMaxing() {
                         Fwd: Fwd: read this". The Excel power user of 1995 has long since
                         been outpaced by ordinary office workers who picked it up in their
                         own time.
-                    </p>
+                    </motion.p>
 
-                    <p className="text-sm mb-6 leading-[1.65] font-[410]">
+                    <motion.p variants={item} className="text-sm mb-6 leading-[1.65] font-[410]">
                         AI agents are different because the gap compounds. Every project a
                         doer completes teaches them something about how to direct these
                         tools, which makes the next project faster, which produces more
@@ -172,9 +182,9 @@ export default function AgentMaxing() {
                         judgment, and a workflow. The non-doer has read forty articles
                         about AI and feels roughly the same as they did a year ago, except
                         slightly more anxious.
-                    </p>
+                    </motion.p>
 
-                    <p className="text-sm mb-6 leading-[1.65] font-[410]">
+                    <motion.p variants={item} className="text-sm mb-6 leading-[1.65] font-[410]">
                         This doesn't mean doers will become billionaires and non-doers will
                         become destitute. The economy is more complicated than that, and
                         also more forgiving. But within any given field, the spread between
@@ -184,11 +194,11 @@ export default function AgentMaxing() {
                         experience will not save you. The thing that will save you is
                         whether you can sit down on a Saturday and build something nobody
                         asked for.
-                    </p>
+                    </motion.p>
 
-                    <h2 className="text-[17px] font-[450] mt-10 mb-4 tracking-[-0.2px]">
+                    <motion.h2 variants={item} className="text-[17px] font-[450] mt-10 mb-4 tracking-[-0.2px]">
                         Becoming one
-                    </h2>
+                    </motion.h2>
 
                     <p className="text-sm mb-6 leading-[1.65] font-[410]">
                         The uncomfortable part of all this is that "natural doer" sounds
@@ -219,7 +229,7 @@ export default function AgentMaxing() {
                         The agents are ready. The question is whether you are.
                     </p>
                 </article>
-            </main>
+            </motion.main>
         </>
     )
 }
