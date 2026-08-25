@@ -6,6 +6,7 @@ import FluidityIsKing from "./FludityIsKing"
 import AgentMaxing from "./AgentMaxing"
 import ToolsDontMatter from "./ToolsDontMatter"
 import type { Location } from "./types"
+import Layout from "./Layout"
 
 
 export default function App() {
@@ -23,11 +24,16 @@ export default function App() {
 
 
   const router = createBrowserRouter([
-    { path: "/", element: <Home location={location} error={error} /> },
-    { path: "/rings-in-shadows", element: <RingsInShadows /> },
-    { path: "/fluidity-is-king", element: <FluidityIsKing /> },
-    { path: "/agent-maxing", element: <AgentMaxing /> },
-    { path: "/tools-dont-matter", element: <ToolsDontMatter /> },
+    {
+      element: <Layout />,      // ← the layout wraps everything, no path of its own
+      children: [
+        { path: "/", element: <Home location={location} error={error} /> },
+        { path: "/rings-in-shadows", element: <RingsInShadows /> },
+        { path: "/fluidity-is-king", element: <FluidityIsKing /> },
+        { path: "/agent-maxing", element: <AgentMaxing /> },
+        { path: "/tools-dont-matter", element: <ToolsDontMatter /> },
+      ],
+    },
   ])
   return <RouterProvider router={router} />
 }

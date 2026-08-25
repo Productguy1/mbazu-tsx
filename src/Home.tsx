@@ -21,8 +21,6 @@ type HomeProps = {
 }
 
 
-
-
 function TextLink({ href, children }: TextLinkProps) {
     return (
         <a

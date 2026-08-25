@@ -11,14 +11,14 @@ export const posts: Post[] = [
         id: 1,
         title: "Agent maxing",
         blurb: "Those who will survive the AI wave are natural doers",
-        href: "agent-maxing",
+        href: "/agent-maxing",
         published: true
     },
     {
         id: 2,
         title: "The tools don't matter",
         blurb: "On switching design tools and what you actually lose",
-        href: "tools-dont-matter",
+        href: "/tools-dont-matter",
         published: true
     },
     {
