@@ -9,29 +9,11 @@ import { Link } from "react-router"
 import type { Location } from "./types"
 import { motion } from "motion/react"
 import { container, item } from "./animation"
-
-type TextLinkProps = {
-    href: string
-    children: ReactNode
-}
+import TextLink from "./Textlink"
 
 type HomeProps = {
     location: Location | null
     error: boolean
-}
-
-
-function TextLink({ href, children }: TextLinkProps) {
-    return (
-        <a
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#707070] underline decoration-[#AEAEAE] underline-offset-[2px] transition-colors duration-200 hover:text-[#111]"
-        >
-            {children}
-        </a>
-    )
 }
 
 export default function Home({ location, error }: HomeProps) {
