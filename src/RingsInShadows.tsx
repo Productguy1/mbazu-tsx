@@ -69,6 +69,9 @@ export default function RingsInShadows() {
                             alt="Diagram of a light source hitting a surface, next to a blue door showing real-world light falloff"
                             className="block w-full rounded-lg"
                         />
+                        <figcaption className="text-xs text-[#858585] mt-2">
+                            Img 1.1 — light cast on a wooden door
+                        </figcaption>
                     </motion.figure>
 
                     <motion.p variants={item} className="text-sm mb-6 leading-[1.65] font-[410]">
@@ -112,6 +115,9 @@ export default function RingsInShadows() {
                             alt="Two buttons side by side: one with a flat shadow, one with a light-modelled shadow"
                             className="block w-full rounded-lg"
                         />
+                        <figcaption className="text-xs text-[#858585] mt-2">
+                            Img 1.2 — button under different light conditions
+                        </figcaption>
                     </figure>
 
                     <p className="text-sm mb-6 leading-[1.65] font-[410]">
@@ -153,6 +159,9 @@ export default function RingsInShadows() {
                             alt="Two connector cards compared: one with a solid border, one with a soft shadow-based border"
                             className="block w-full rounded-lg"
                         />
+                        <figcaption className="text-xs text-[#858585] mt-2">
+                            Img 1.3 — a solid border versus a soft shadow-based border
+                        </figcaption>
                     </figure>
 
                     <p className="text-sm mb-6 leading-[1.65] font-[410]">
@@ -201,6 +210,9 @@ export default function RingsInShadows() {
                             alt="Two mugs compared: one with a double shadow, one with multiple layered shadows"
                             className="block w-full rounded-lg"
                         />
+                        <figcaption className="text-xs text-[#858585] mt-2">
+                            Img 1.4 — double shadow versus multiple shadows
+                        </figcaption>
                     </figure>
 
                     <p className="text-sm mb-6 leading-[1.65] font-[410]">

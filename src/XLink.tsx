@@ -52,11 +52,11 @@ function XLink() {
 
                 <div className="mt-3 flex items-center gap-4 text-sm">
                     <span className="text-[#2E2E2E]">
-                        <span className="font-medium tracking-[-0.2px]">860</span>{" "}
+                        <span className="font-medium tracking-[-0.2px]">869</span>{" "}
                         <span className="text-[#707070]">Following</span>
                     </span>
                     <span className="text-[#2E2E2E]">
-                        <span className="font-medium tracking-[-0.2px]">2,702</span>{" "}
+                        <span className="font-medium tracking-[-0.2px]">2,762</span>{" "}
                         <span className="text-[#707070]">Followers</span>
                     </span>
                 </div>
