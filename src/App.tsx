@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { createBrowserRouter, RouterProvider } from "react-router"
+import { Analytics } from "@vercel/analytics/react"
 import Home from "./Home"
 import RingsInShadows from "./RingsInShadows"
 import FluidityIsKing from "./FludityIsKing"
@@ -35,5 +36,10 @@ export default function App() {
       ],
     },
   ])
-  return <RouterProvider router={router} />
+  return (
+    <>
+      <RouterProvider router={router} />
+      <Analytics />
+    </>
+  )
 }
