@@ -12,7 +12,7 @@ import mugShadows from "./assets/rings-mug-shadows.png"
 export default function RingsInShadows() {
     return (
         <>
-            <nav className="fixed top-24 left-32 z-10">
+            <nav className="hidden lg:block fixed top-24 left-32 z-10">
                 <Link
                     to="/"
                     className="flex items-center gap-1.5 text-sm text-[#707070] transition-colors duration-200 hover:text-[#111]"

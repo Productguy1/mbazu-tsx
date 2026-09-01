@@ -5,7 +5,7 @@ import { container, item } from "./animation"
 export default function AgentMaxing() {
     return (
         <>
-            <nav className="fixed top-24 left-32 z-10">
+            <nav className="hidden lg:block fixed top-24 left-32 z-10">
                 <Link
                     to="/"
                     className="flex items-center gap-1.5 text-sm text-[#707070] transition-colors duration-200 hover:text-[#111]"
@@ -21,14 +21,14 @@ export default function AgentMaxing() {
                     Index
                 </Link>
             </nav>
-            <motion.main 
+            <motion.main
                 variants={container}
                 initial="hidden"
                 animate="visible"
                 className="flex flex-col max-w-2xl m-auto pt-24 pb-14 px-6"
             >
                 {/* Article header */}
-                <motion.header 
+                <motion.header
                     variants={item}
                     className="mb-9"
                 >

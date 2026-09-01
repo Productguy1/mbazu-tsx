@@ -5,7 +5,7 @@ import { Link } from "react-router"
 export default function FluidityIsKing() {
     return (
         <>
-            <nav className="fixed top-24 left-32 z-10">
+            <nav className="hidden lg:blockfixed top-24 left-32 z-10">
                 <Link
                     to="/"
                     className="flex items-center gap-1.5 text-sm text-[#707070] transition-colors duration-200 hover:text-[#111]"
