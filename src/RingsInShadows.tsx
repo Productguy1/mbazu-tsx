@@ -3,6 +3,7 @@ import { motion } from "motion/react"
 import { container, item } from "./animation"
 import CodeBlock from "./CodeBlock"
 import TextLink from "./Textlink"
+import ProgressiveBlur from "./ProgressiveBlur"
 
 import doorDiagram from "./assets/rings-door-diagram.png"
 import buttonLight from "./assets/rings-button-light.png"
@@ -35,6 +36,7 @@ export default function RingsInShadows() {
                 animate="visible"
                 className="flex flex-col max-w-2xl m-auto pt-24 pb-14 px-6"
             >
+                <ProgressiveBlur />
                 <motion.header variants={item} className="mb-9">
                     <h1 className="text-[18px] font-[450] leading-[1.3] mb-2">
                         Rings in shadows: why your shadows suck and how to fix it

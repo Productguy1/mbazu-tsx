@@ -10,6 +10,7 @@ import type { Location } from "./types"
 import { motion } from "motion/react"
 import { container, item } from "./animation"
 import TextLink from "./Textlink"
+import ProgressiveBlur from "./ProgressiveBlur"
 
 type HomeProps = {
     location: Location | null
@@ -51,6 +52,7 @@ export default function Home({ location, error }: HomeProps) {
             animate="visible"
             className="flex flex-col max-w-2xl items-start justify-center m-auto pt-24 pb-14 px-6"
         >
+            <ProgressiveBlur />
             <motion.header variants={item} className="mb-9">
                 <div>
                     <h1

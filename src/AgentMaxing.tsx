@@ -1,6 +1,7 @@
 import { Link } from "react-router"
 import { motion } from "motion/react"
 import { container, item } from "./animation"
+import ProgressiveBlur from "./ProgressiveBlur"
 
 export default function AgentMaxing() {
     return (
@@ -27,6 +28,7 @@ export default function AgentMaxing() {
                 animate="visible"
                 className="flex flex-col max-w-2xl m-auto pt-24 pb-14 px-6"
             >
+                <ProgressiveBlur />
                 {/* Article header */}
                 <motion.header
                     variants={item}

@@ -1,6 +1,7 @@
 import { motion } from "motion/react"
 import { container, item } from "./animation"
 import { Link } from "react-router"
+import ProgressiveBlur from "./ProgressiveBlur"
 
 export default function FluidityIsKing() {
     return (
@@ -28,6 +29,7 @@ export default function FluidityIsKing() {
                 animate="visible"
                 className="flex flex-col max-w-2xl m-auto pt-24 pb-14 px-6"
             >
+                <ProgressiveBlur />
                 <motion.header variants={item} className="mb-9">
                     <h1 className="text-[18px] font-[450] leading-[1.3] mb-2">
                         Fluidity is King: a shallow deep dive on continuity interactions
