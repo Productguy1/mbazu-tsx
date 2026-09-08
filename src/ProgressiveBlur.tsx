@@ -1,11 +1,11 @@
-
+// ProgressiveBlur.tsx
 export default function ProgressiveBlur() {
     const layers = [
-        { blur: 12 },
-        { blur: 8 },
-        { blur: 4 },
-        { blur: 2 },
-        { blur: 1 },
+        { blur: 12, opacity: 1 },
+        { blur: 8, opacity: 1 },
+        { blur: 4, opacity: 1 },
+        { blur: 2, opacity: 1 },
+        { blur: 1, opacity: 0 },
     ]
     const n = layers.length
 
@@ -29,6 +29,7 @@ export default function ProgressiveBlur() {
                         style={{
                             backdropFilter: `blur(${layer.blur}px)`,
                             WebkitBackdropFilter: `blur(${layer.blur}px)`,
+                            opacity: layer.opacity,
                             maskImage: mask,
                             WebkitMaskImage: mask,
                         }}
